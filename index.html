@@ -4,43 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySync Project</title>
-    <link rel="icon" href="logo2.jpg">
+    <link rel="icon" href="./assets/logo2.jpg">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=light_mode" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,light_mode" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,800;1,800&family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seaweed+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_open" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_open" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div class="header">
         <header class="header-content">
 
-            <a href="#logo" class="logo">
-                <img src="logo2.jpg" alt="header_logo" class="logo_icon">
+        <section id="logo">
+            <a href="#faq" class="logo">
+                <img src="./assets/logo2.jpg" alt="header_logo" class="logo_icon">
                 <span class="logo_text">StudySync</span>
             </a>
+        </section>
         
-
             <nav class="nav">
-                <a href="#Home" class="nav-link">Home</a>
-                <a href="#Features" class="nav-link">Features</a>
-                <a href="#Pricing" class="nav-link">Pricing</a>
-                <a href="#Blog" class="nav-link">Blog</a>
-                <a href="#Aboutus" class="nav-link">About-us</a>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#aboutus" class="nav-link">About-us</a>
             </nav>
 
+        <div class="main-menu">
             <a href="#Contact" class="contact-btn">Contact Us</a>
-
             <button type="button" class="menu-button">
-                <img src="hamesburger.jpg" alt="menu-icon" class="menu-icon">
+                <img src="./assets/hamesburger.jpg" alt="menu-icon" class="menu-icon">
             </button>
+            <span id="themeBtn" class="material-symbols-outlined">dark_mode</span>
+        </div>
 
         </header>
     </div>
 
+    <!-- <div class="hamburge-nav"> -->
+        <nav class="hamburge-nav">
+            <a href="#home" class="nav_link">Home</a>
+            <a href="#features" class="nav_link">Features</a>
+            <a href="#pricing" class="nav_link">Pricing</a>
+            <a href="#faq" class="nav_link">FAQ</a>
+            <a href="#aboutus" class="nav_link">About-us</a>
+        </nav>
+    <!-- </div> -->
+
+    <div class="daily-qoute">
+        <p id="qoute"></p>
+    </div>
+
     <div class="content">
-        <section class="main-content">
+        <section id="home" class="main-content">
 
             <div class="content-left">
                 <p class="section-label">Very proud to introduce</p>
@@ -55,12 +74,10 @@
 <!-- ----------- -->
             <div class="content-right">
                 <div class="img-container">
-                    <img src="content-img.jpg" alt="section-image" class="section-image">
+                    <img src="./assets/content-img.jpg" alt="section-image" class="section-image">
                 </div>
             </div>
-
         </section>
-    
     </div>
     
     <div class="company-container">
@@ -68,28 +85,29 @@
         <div class="company-grid">
 
             <div class="company-logo">
-                <img src="GoogleIcon.jpg" alt="Google-icon" class="company-img">
+                <img src="./assets/GoogleIcon.jpg" alt="Google-icon" class="company-img">
                 <span class="logo-text">Google</span>
             </div>
 
             <div class="company-logo">
-                <img src="microsofticon.jpg" alt="Microsoft-icon" class="company-img">
+                <img src="./assets/microsofticon.jpg" alt="Microsoft-icon" class="company-img">
                 <span class="logo-text">Microsoft</span>
             </div>
 
             <div class="company-logo">
-                <img src="linkedinIcon.jpg" alt="Linkedin-icon" class="company-img">
+                <img src="./assets/linkedinIcon.jpg" alt="Linkedin-icon" class="company-img">
                 <span class="logo-text">Linkedin</span>
             </div>
 
             <div class="company-logo">
-                <img src="vectorEduicon.jpg" alt="VE-icon" class="company-img">
+                <img src="./assets/vectorEduicon.jpg" alt="VE-icon" class="company-img">
                 <span class="logo-text">VectorEdu</span>
             </div>
 
         </div>
     </div>
 
+    <section id="features">
     <div class="feature-container">
         <div class="feature-content">
 
@@ -107,7 +125,7 @@
                  <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card icon1.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card icon1.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -124,7 +142,7 @@
                   <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card2.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card2.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -141,7 +159,7 @@
                   <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card3.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card3.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -158,7 +176,7 @@
                   <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card4.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card4.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -175,7 +193,7 @@
                   <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card5.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card5.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -192,7 +210,7 @@
                   <div class="feature-card">
 
                     <div class="card-icon">
-                        <img src="card6.jpg" alt="PL-img" class="icon-img">
+                        <img src="./assets/card6.jpg" alt="PL-img" class="icon-img">
                     </div>
 
                     <div class="card-info">
@@ -209,87 +227,161 @@
 
         </div>
     </div>
+    </section>
 
+    <section id="pricing">  
+        <h2 class="pricing-tag">Pricing Plans</h2>
+        <div class="pricing-container">
+    
+            <div class="pricing-card">
+                <h3 class="pricing-title">Basic Plan</h3>
+                <p class="pricing-price">$9.99<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li>Access to core features</li>
+                    <li>Basic analytics</li>
+                    <li>Email support</li>
+                </ul>
+                <button class="pricing-btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-title">Pro Plan</h3>
+                <p class="pricing-price">$19.99<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li>Access to all features</li>
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                </ul>
+                <button class="pricing-btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-title">Premium Plan</h3>
+                <p class="pricing-price">$29.99<span>/month</span></p>
+                <ul class="pricing-features">
+                    <li>Unlimited access to all features</li>
+                    <li>Customizable dashboards</li>
+                    <li>24/7 dedicated support</li>
+                </ul>
+                <button class="pricing-btn">Get Started</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="aboutus">
     <div class="testimonial-container">
         <div class="testimonial-content">
             <h2 class="testimonial-title">
                 What Others Say About Us
             </h2>
             <div class="testimonial-grid">
+                <button class="card-slider" id="prevBtn"><</button>
     <!-- CARD 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        <p> “StudySync revolutionized my classroom! Engaging content and teacher resources make learning enjoyable. Highly recommended for educators.”</p>
+                        <p id="review"> “StudySync revolutionized my classroom! Engaging content and teacher resources make learning enjoyable. Highly recommended for educators.”</p>
                     </div>
                     <div class="testimonial-avtar">
-                        <img src="testimonial image 1.jpg" alt="teacher-img">
+                        <img id="profileImg" src="./assets/testimonial image 1.jpg" alt="teacher-img">
                     </div>
                     <div class="testimonial-info">
-                        <h3 class="testimonial-name">Sarah Johnson</h3>
-                        <p class="testimonial-desc">8th Grade English Teacher</p>
+                        <h3 id="name" class="testimonial-name">Sarah Johnson</h3>
+                        <p id="role" class="testimonial-desc">8th Grade English Teacher</p>
                     </div>
                 </div>
-    <!-- CARD 2 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>“StudySync transformed our family's learning journey. Safe, interactive, and progress tracking features are invaluable for parents.”</p>
-                    </div>
-                    <div class="testimonial-avtar">
-                        <img src="testimonial image 2.jpg" alt="parent-img">
-                    </div>
-                    <div class="testimonial-info">
-                        <h3 class="testimonial-name">Mark Davis</h3>
-                        <p class="testimonial-desc">Parent</p>
-                    </div>
-                </div>
-    <!-- CARD 3 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>“StudySync, a true game-changer! Flexible content, tailored assessments, and excellent support. Integral to our school district's success.”</p>
-                    </div>
-                    <div class="testimonial-avtar">
-                        <img src="testimonial image 3.jpg" alt="dr-img">
-                    </div>
-                    <div class="testimonial-info">
-                        <h3 class="testimonial-name">Dr.James Carter</h3>
-                        <p class="testimonial-desc">School Administrator</p>
-                    </div>
-                </div>
-
+                <button class="card-slider" id="nextBtn">></button>
+            </div>
+            <div class="dots-container">
+                <!-- <span></span> -->
             </div>
         </div>
     </div>
 
     <div class="newsletter-container">
-
         <div class="newsletter-content">
             <!-- Left Part -->
-                <div class="news-left">
-                    <img src="news-letter-img.jpg" loading="lazy" alt="news-letter-img">
-                </div>
+            <div class="news-left">
+                <img src="./assets/news-letter-img.jpg" loading="lazy" alt="news-letter-img">
+            </div>
             <!-- Right Part -->
-                <div class="news-right">
-                    <div class="news-info">
-                        <h2 class="news-title">Get the latest updates</h2>
-                        <p class="news-desc" >Sign up for our newsletter</p>
-                    </div>
-
-                    <form action="#send" class="news-form">
-                        <input type="text" class="news-email" placeholder="Email">
-                        <button class="news-btn">Send</button>
-                    </form>
-
-                    <div class="privacy-policy">
-                        By signing up to our newsletter you agree to our
-                        <a href="#privacy" class="news-link"> Terms of Service </a>
-                        and
-                        <a href="#privacy" class="news-link">Privacy policy</a>
-                        .
-                    </div>
+            <div class="news-right">
+                <div class="news-info">
+                    <h2 class="news-title">Get the latest updates</h2>
+                    <p class="news-desc" >Sign up for our newsletter</p>
                 </div>
+
+                <form action="#send" class="news-form">
+                    <input type="email" class="news-email" placeholder="abc@gmail.com" required>
+                    <button class="news-btn">Send</button>
+                </form>
+
+                <div class="privacy-policy">
+                        By signing up to our newsletter you agree to our
+                    <a href="#privacy" class="news-link"> Terms of Service </a>
+                        and
+                    <a href="#privacy" class="news-link">Privacy policy</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="faq">
+    <div class="faq-container">
+        <h2 class="faq-title">FAQ</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <p>What is StudySync?</p>
+                <span class="icon">^</span>
+            </div>
+            <div class="faq-answer">
+                StudySync is an online learning platform that provides a wide range of courses and resources for students and professionals. Our mission is to make learning accessible, engaging, and effective for everyone.
+            </div>
+        </div> 
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <p>What courses do you offer?</p>
+                <span class="icon">^</span>
+            </div>
+            <div class="faq-answer">
+                We offer web development, data science, and design courses. With our platform, you can learn at your own pace and gain practical skills to advance your career.
+            </div>
+        </div>  
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <p>Is there a certificate?</p>
+                <span class="icon">^</span>
+            </div>
+            <div class="faq-answer">
+                Yes, certificates are provided after course completion.
+            </div>
         </div>
 
+        <div class="faq-item">
+            <div class="faq-question">
+                <p>What payment methods are accepted?</p>
+                <span class="icon">^</span>
+            </div>
+            <div class="faq-answer">
+                We offer all payment methods including credit/debit cards, PayPal, and bank transfers.
+            </div>
+        </div>  
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <p>Can I access courses on mobile?</p>
+                <span class="icon">^</span>
+            </div>
+            <div class="faq-answer">
+                Yes, you can access courses on mobile devices.
+            </div>
+        </div>
     </div>
+    </section>
 
     <div class="footer-container">
         <footer class="footer">
@@ -297,7 +389,7 @@
 
                 <div class="footer-logo">
                     <a href="" class="logo-link">
-                        <img src="logo2.jpg" alt="logo" class="footer-icon">
+                        <img src="./assets/logo2.jpg" alt="logo" class="footer-icon">
                         StudySync
                     </a>
                 </div>
@@ -381,8 +473,9 @@
         </footer>
 
         <div class="footer-copywrite">
-            <p> &copy;2021-Present StudySync,All rights reserved</p>
+            <p> &copy;2025-Present StudySync,All rights reserved</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
